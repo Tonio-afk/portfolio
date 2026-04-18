@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Music Player</title>
+
+
+
+
+   <style>
+       /* 1. Body and Background Styles */
+       body {
+           background: url('images/background.jpg');
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           font-family: sans-serif;
+           color: white;
+       }
+
+
+
+
+       /* 2. Control Panel Container */
+       #cp {
+           width: 600px;        
+           margin: 100px auto;  
+           text-align: center;  
+           background-color: rgba(0, 0, 0, 0.6);
+           padding: 20px;
+           border-radius: 10px;
+       }
+
+
+
+
+       /* 3. Button Styles */
+       button {
+           background-color: #2ecc71;
+           padding: 10px;
+           font-size: 14px;
+           border: none;            
+           width: 100px;
+           margin: 5px;            
+           cursor: pointer;        
+           border-radius: 4px;      
+           transition: 0.3s;        
+       }
+
+
+
+
+       button:hover {
+           background-color: #27ae60;
+       }
+
+
+
+
+       /* 4. Message Bar Styles */
+       #message {
+           font-weight: bold;
+           color: #f1c40f;          
+           font-size: 1.2em;
+           margin-top: 20px;
+       }
+   </style>
+
+
+
+
+   <script src="https://code.jquery.com/jquery.min.js"></script>
+   <script src="app.js"></script>
+</head>
+
+
+
+
+<body>
+   <div id="cp">
+       <button id="play">Play</button>
+       <button id="stop">Stop</button>
+       <button id="pause">Pause</button>
+       <button id="mute">Mute</button>
+       <button id="unmute">Unmute</button>
+       <button id="vol-up">Volume Up</button>
+       <button id="vol-down">Volume Down</button>
+     
+       <p id="message">Waiting</p>
+   </div>
+
+
+
+
+   <audio id="player">
+       <source src="music/song1.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+   </audio>
+</body>
+</html>
+
+

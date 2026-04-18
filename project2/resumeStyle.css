@@ -1,0 +1,83 @@
+/* =========================================
+   LAYOUT: 5 AREAS & 10PX DISTANCE
+   ========================================= */
+#container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 10px; /* Requirement: Distance between areas */
+    margin: 10px;
+}
+
+/* =========================================
+   BACKGROUND & BODY
+   ========================================= */
+body {
+    background-color: #cccccc; /* Requirement: background-color */
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-repeat: repeat; /* Requirement: background-repeat */
+    font-family: Arial, sans-serif;
+    color: #111111; /* Clear font color */
+}
+
+/* =========================================
+   AREA STYLING (IDs)
+   ========================================= */
+#hd {
+    grid-column: 1 / 4;
+    padding: 50px; /* Requirement: Header padding 50px */
+    opacity: 0.8;  /* Requirement: Opacity 0.8 */
+    background-color: #ADD8E6;
+    text-align: center;
+}
+
+#lnav, #bd, #rnav, #ft {
+    padding: 10px; /* Requirement: Padding for others is 10px */
+    opacity: 0.8;  /* Requirement: Opacity 0.8 */
+    background-color: #ffffff;
+}
+
+#ft {
+    grid-column: 1 / 4;
+}
+
+/* =========================================
+   HYPERLINK STYLING
+   ========================================= */
+a {
+    font-size: 16px;
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a:hover {
+    font-size: 20px; /* Requirement: Bigger on hover */
+    color: #0000FF;
+}
+
+a:visited {
+    font-size: 16px;
+    color: #800080; /* Different color for visited */
+}
+
+/* =========================================
+   HORIZONTAL LIST (FOOTER)
+   ========================================= */
+.hList {
+    text-align: center;
+    position: relative;
+}
+
+.hList ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.hList li {
+    display: inline; /* Requirement: make horizontal */
+    margin: 0 10px;  /* 10px left/right */
+}
+
+/* Table and Image Styling */
+table, th, td { border: 1px solid black; border-collapse: collapse; }
+th, td { padding: 8px; }
+.profile-img { width: 100px; border-radius: 50%; }

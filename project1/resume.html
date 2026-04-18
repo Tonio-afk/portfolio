@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codio Resume Project</title>
+    <style>
+        /* 1. BACKGROUND: Applying a light grey background to the page */
+        body {
+            background-color: #eef2f3; 
+            font-family: Arial, Helvetica, sans-serif; /* 2. FONTS: Sans-serif for body */
+            margin: 50px;
+            color: #333;
+        }
+
+        /* 3. CENTRALIZING: Name and contact info */
+        header {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* 4. IMAGE: Positioning photo to the top right */
+        .profile-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 130px;
+            height: 130px;
+            border: 3px solid #2c3e50;
+        }
+
+        /* 2. FONTS: Serif font for headings */
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #2c3e50;
+        }
+
+        /* 5. TABLE: Formatting for course list */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 2px solid #2c3e50;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profilepic.png" alt="My Profile Photo" class = "profile-img" >
+        
+        <h1>Antonio Mitchell</h1>
+        <p>Benedict College | Computer Science Major</p>
+        <p>Email: antonio.mitchell39@my.benedict.edu</p>
+
+        <div class="links">
+            <a href="https://twitter.com">Twitter</a> | 
+            <a href="https://linkedin.com">LinkedIn</a> | 
+            <a href="https://github.com">GitHub</a>
+        </div>
+    </header>
+
+    <hr>
+
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Frontend: <strong>HTML5, CSS3, JavaScript</strong></li>
+        <li>Backend: <em>Node.js, Python, SQL</em></li>
+        <li>Tools: Git, Codio IDE, VS Code</li>
+    </ul>
+
+    <h2>Education & Coursework</h2>
+    <p>Current Undergraduate Student</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Semester</th>
+                <th>Focus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Development I</td>
+                <td>Spring 2026</td>
+                <td>HTML Structure & CSS Layouts</td>
+            </tr>
+            <tr>
+                <td>Intro to Program</td>
+                <td>Spring 2026</td>
+                <td>Relational Data & SQL Queries</td>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>Spring 2026</td>
+                <td>Agile Methodologies</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Project Goals</h2>
+    <ol>
+        <li>Master <strong>python</strong> .</li>
+        <li>Understand web development.</li>
+        <li>Deploy a full portfolio site.</li>
+    </ol>
+
+</body>
+</html>
